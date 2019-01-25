@@ -5,6 +5,7 @@ import { WhatWeDoComponent } from './what-we-do/what-we-do.component';
 import { ResourcesComponent } from './resources/resources.component';
 import { ContactComponent } from './contact/contact.component';
 import { ActionComponent } from './action/action.component';
+import { ResourceDetailComponent } from './resource-detail/resource-detail.component';
 
 const appRoutes: Routes = [
   {
@@ -27,6 +28,10 @@ const appRoutes: Routes = [
     path: 'action',
     component: ActionComponent
   },
+  {
+  path: 'resources/:slug',
+  component: ResourceDetailComponent
+}
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);
