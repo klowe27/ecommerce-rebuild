@@ -18,6 +18,12 @@ export class CategoryPipe implements PipeTransform {
           output.push(input[i]);
         }
       }
+    } else if (category == "Sale") {
+      for (var i = 0; i < input.length; i++) {
+        if (input[i].sale === true) {
+          output.push(input[i]);
+        }
+      }
     } else {
       for (var i = 0; i < input.length; i++) {
         if (input[i].featured === true) {

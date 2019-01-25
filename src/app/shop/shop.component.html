@@ -1,3 +1,14 @@
+<div class="form-group">
+  <select (change)="onChange($event.target.value)" class="form-control">
+    <option value="Category">Category</option>
+    <option value="T-Shirt">T-Shirts</option>
+    <option value="Tank">Tanks</option>
+    <option value="Sweatshirt">Sweatshirts</option>
+    <option value="Accessory">Accessories</option>
+    <option value="Sale">Sale</option>
+  </select>
+</div>
+
 <div class="product-list">
   <div class="product" *ngFor="let product of products | category:filterByCategory" (click)="goToProductPage(product)">
     <img src="assets/images/{{ product.images[0] }}">

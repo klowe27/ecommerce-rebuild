@@ -23,4 +23,8 @@ export class ShopComponent implements OnInit {
   goToProductPage(clickedProduct: Product){
     this.router.navigate(['shop', clickedProduct.id]);
   }
+
+  onChange(category) {
+    this.filterByCategory = category;
+  }
 }
