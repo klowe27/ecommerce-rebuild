@@ -31,3 +31,8 @@ p {
   font-weight: 300;
   font-size: 14px;
 }
+
+a {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;  
+}

@@ -1,2 +1,35 @@
-<h2>{{ productToDisplay.name }}</h2>
-<p>{{ productToDisplay.price | currency }}</p>
+<div class="product-details">
+  <div class="product-images">
+    <img *ngFor="let image of productToDisplay.images" src="assets/images/{{ image }}" alt="{{ productToDisplay.name }}">
+  </div>
+  <div class="product-info">
+
+    <h2>{{ productToDisplay.name }}</h2>
+    <h2>{{ productToDisplay.price | currency }}</h2>
+
+    <div *ngIf="productToDisplay.colors.length > 0"class="form-group">
+      <label for="color">Select color</label>
+      <select class="form-control">
+        <option *ngFor="let color of productToDisplay.colors" value="{{ color }}">{{ color }}</option>
+      </select>
+    </div>
+
+    <div *ngIf="productToDisplay.sizes.length > 0" class="form-group">
+      <label for="size">Select Size</label>
+      <select class="form-control">
+        <option *ngFor="let size of productToDisplay.sizes" value="{{ size }}">{{ size }}</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="quantity">Quantity</label>
+      <input type="number" name="quantity" class="form-control">
+    </div>
+
+    <button type="button" class="add">Add to Cart</button><br>
+    <a href="/shop"><button type="button" class="keep-shopping">Keep Shopping</button></a>
+    <br><br>
+    <h3>Info</h3>
+    <p>{{ productToDisplay.info }}</p>
+  </div>
+</div>
