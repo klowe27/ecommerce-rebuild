@@ -8,6 +8,7 @@ import { routing } from './app.routing';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { WhatWeDoComponent } from './what-we-do/what-we-do.component';
+import { ResourcesComponent } from './resources/resources.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { WhatWeDoComponent } from './what-we-do/what-we-do.component';
     HomepageComponent,
     HeaderComponent,
     FooterComponent,
-    WhatWeDoComponent
+    WhatWeDoComponent,
+    ResourcesComponent
   ],
   imports: [
     BrowserModule,
