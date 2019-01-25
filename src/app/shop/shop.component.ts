@@ -20,12 +20,6 @@ export class ShopComponent implements OnInit {
   }
 
   goToProductPage(clickedProduct: Product){
-    this.router.navigate(['products', clickedProduct.id]);
+    this.router.navigate(['shop', clickedProduct.id]);
   }
-
-}
-
-
-
-
 }

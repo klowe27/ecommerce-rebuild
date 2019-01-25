@@ -13,6 +13,7 @@ import { ContactComponent } from './contact/contact.component';
 import { ActionComponent } from './action/action.component';
 import { ResourceDetailComponent } from './resource-detail/resource-detail.component';
 import { ShopComponent } from './shop/shop.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { ShopComponent } from './shop/shop.component';
     ContactComponent,
     ActionComponent,
     ResourceDetailComponent,
-    ShopComponent
+    ShopComponent,
+    ProductDetailComponent
   ],
   imports: [
     BrowserModule,
