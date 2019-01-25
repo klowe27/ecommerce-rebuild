@@ -1,5 +1,47 @@
 .header {
-  background-color: #F8F8F8;
   padding: 30px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+.menu {
+  display: grid;
+  width: 650px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  margin: 0 auto;
+}
+
+.menu-item {
+  margin: 5px;
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding: 2px;
+  color: black;
+}
+
+.home:hover {
+  background-color: #71B3A3;
+}
+
+.about:hover {
+  background-color: #FFECA3;
+}
+
+.shop:hover {
+  background-color: red;
+}
+.resources:hover {
+  background-color: #5B87C3;
+}
+
+.contact:hover {
+  background-color: #FF6A9E;
+}
+
+.action:hover {
+  background-color: #C19FAC;
+}
+
+a:hover {
+  text-decoration: none;
 }
