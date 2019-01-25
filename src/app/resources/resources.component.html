@@ -1,3 +1,9 @@
-<p>
-  resources works!
-</p>
+<h1>Resources</h1>
+<div class="resource-list">
+  <div *ngFor="let resource of resources">
+    <div class="resource-preview">
+      <img class="resource-img" src="assets/images/{{ resource.image }}">
+      <h3>{{resource.title}}</h3>
+    </div>
+  </div>
+</div>
