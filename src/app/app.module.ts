@@ -9,6 +9,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { WhatWeDoComponent } from './what-we-do/what-we-do.component';
 import { ResourcesComponent } from './resources/resources.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { ResourcesComponent } from './resources/resources.component';
     HeaderComponent,
     FooterComponent,
     WhatWeDoComponent,
-    ResourcesComponent
+    ResourcesComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
