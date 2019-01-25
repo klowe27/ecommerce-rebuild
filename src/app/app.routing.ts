@@ -6,6 +6,7 @@ import { ResourcesComponent } from './resources/resources.component';
 import { ContactComponent } from './contact/contact.component';
 import { ActionComponent } from './action/action.component';
 import { ResourceDetailComponent } from './resource-detail/resource-detail.component';
+import { ShopComponent } from "./shop/shop.component";
 
 const appRoutes: Routes = [
   {
@@ -31,7 +32,11 @@ const appRoutes: Routes = [
   {
   path: 'resources/:slug',
   component: ResourceDetailComponent
-}
+  },
+  {
+  path: 'shop',
+  component: ShopComponent
+  }
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);

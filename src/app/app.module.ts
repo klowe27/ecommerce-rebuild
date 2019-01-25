@@ -12,6 +12,7 @@ import { ResourcesComponent } from './resources/resources.component';
 import { ContactComponent } from './contact/contact.component';
 import { ActionComponent } from './action/action.component';
 import { ResourceDetailComponent } from './resource-detail/resource-detail.component';
+import { ShopComponent } from './shop/shop.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { ResourceDetailComponent } from './resource-detail/resource-detail.compo
     ResourcesComponent,
     ContactComponent,
     ActionComponent,
-    ResourceDetailComponent
+    ResourceDetailComponent,
+    ShopComponent
   ],
   imports: [
     BrowserModule,
