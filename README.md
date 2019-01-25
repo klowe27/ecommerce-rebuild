@@ -37,9 +37,9 @@ Run `ng generate component component-name` to generate a new component. You can 
     - Sizes: string[]
     - Info: string
     - Category: string
-    - Sale: boolean 
-    - Featured: boolean
+    - Sale: boolean
     - Images: string[]
+    - Featured: boolean
   - Resource model
     - Title: string
     - Content: string
