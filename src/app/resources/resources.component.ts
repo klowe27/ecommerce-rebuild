@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Resource } from '../resource.model.ts'
+import { Resource } from '../resource.model'
 import { Router } from '@angular/router';
 import { ResourceService } from '../resource.service';
 

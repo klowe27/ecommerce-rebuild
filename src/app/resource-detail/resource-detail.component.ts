@@ -12,13 +12,15 @@ import { ResourceService } from '../resource.service';
 })
 export class ResourceDetailComponent implements OnInit {
   resourceSlug: string = null;
+  resourceToDisplay: Resource;
 
   constructor(private route: ActivatedRoute, private location: Location, private resourceService: ResourceService) { }
 
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {
     this.resourceSlug = urlParameters['slug'];
-});
+    });
+    this.resourceToDisplay = this.resourceService.getResourceBySlug(this.resourceSlug);
   }
 
 }

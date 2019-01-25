@@ -12,7 +12,7 @@ export class ResourceService {
   }
 
   getResourceBySlug(resourceSlug: string){
-    for (var i = 0; i <= RESOURCES.length - 1; i++) {
+    for (var i = 0; i < RESOURCES.length; i++) {
       if (RESOURCES[i].slug === resourceSlug) {
         return RESOURCES[i];
       }
