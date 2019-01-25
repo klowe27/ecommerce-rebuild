@@ -14,6 +14,7 @@ import { ActionComponent } from './action/action.component';
 import { ResourceDetailComponent } from './resource-detail/resource-detail.component';
 import { ShopComponent } from './shop/shop.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { CategoryPipe } from './category.pipe.ts'
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
     ActionComponent,
     ResourceDetailComponent,
     ShopComponent,
-    ProductDetailComponent
+    ProductDetailComponent,
+    CategoryPipe
   ],
   imports: [
     BrowserModule,
