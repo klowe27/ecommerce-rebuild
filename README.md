@@ -17,8 +17,8 @@ Run `ng generate component component-name` to generate a new component. You can 
   - What We Do (what we do component)
   - Shop (list all component)
     - Pipe to sort by T-Shirts, Tanks, Sweatshirts, Accessories, Sale
-      - Individual product page (component)
-        - Add to cart select color, size, quantity (component)
+    - Individual product page (component)
+      - Add to cart select color, size, quantity (component)
     - Cart (list component)
       - Delete items (component)
       - Update item color, size, quantity (component)
@@ -38,10 +38,12 @@ Run `ng generate component component-name` to generate a new component. You can 
     - Info: string
     - Category: string
     - Sale: boolean 
+    - Featured: boolean
+    - Images: string[]
   - Resource model
     - Title: string
     - Content: string
-    - Thumbnail: string
+    - Image: string
 
 ## Build
 
