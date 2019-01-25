@@ -10,7 +10,7 @@ const appRoutes: Routes = [
     component: HomepageComponent
   },
   {
-    path: '/what-we-do',
+    path: 'what-we-do',
     component: WhatWeDoComponent
   },
 ];
