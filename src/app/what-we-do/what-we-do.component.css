@@ -1,0 +1,9 @@
+.whatWeDo {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+}
+
+.whatWeDo img {
+  width: 300px;
+  margin: 20px;
+}
