@@ -12,6 +12,7 @@ import { ProductService } from '../product.service';
 })
 export class ShopComponent implements OnInit {
   products: Product[];
+  filterByCategory = null;
 
   constructor(private router: Router, private productService: ProductService) { }
 
