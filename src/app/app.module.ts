@@ -10,6 +10,7 @@ import { FooterComponent } from './footer/footer.component';
 import { WhatWeDoComponent } from './what-we-do/what-we-do.component';
 import { ResourcesComponent } from './resources/resources.component';
 import { ContactComponent } from './contact/contact.component';
+import { ActionComponent } from './action/action.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { ContactComponent } from './contact/contact.component';
     FooterComponent,
     WhatWeDoComponent,
     ResourcesComponent,
-    ContactComponent
+    ContactComponent,
+    ActionComponent
   ],
   imports: [
     BrowserModule,

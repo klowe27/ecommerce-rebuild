@@ -4,7 +4,7 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { WhatWeDoComponent } from './what-we-do/what-we-do.component';
 import { ResourcesComponent } from './resources/resources.component';
 import { ContactComponent } from './contact/contact.component';
-
+import { ActionComponent } from './action/action.component';
 
 const appRoutes: Routes = [
   {
@@ -22,6 +22,10 @@ const appRoutes: Routes = [
   {
     path: 'contact',
     component: ContactComponent
+  },
+  {
+    path: 'action',
+    component: ActionComponent
   },
 ];
 
