@@ -10,6 +10,37 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
+## Site Plan
+- Header (repeated header component on each page)
+- Footer (repeated footer component on each page)
+- Homepage (homepage component)
+  - What We Do (what we do component)
+  - Shop (list all component)
+    - Pipe to sort by T-Shirts, Tanks, Sweatshirts, Accessories, Sale
+      - Individual product page (component)
+        - Add to cart select color, size, quantity (component)
+    - Cart (list component)
+      - Delete items (component)
+      - Update item color, size, quantity (component)
+  - Resources (list all component)
+    - Individual resource view component
+  - Visuals (component)
+  - Contact (component)
+  - Action (component)
+
+  Models
+  - Product model
+    - Name: string
+    - ID: string
+    - Price: number
+    - Colors: string[]
+    - Sizes: string[]
+    - Info: string
+  - Resource model
+    - Title: string
+    - Content: string
+    - Thumbnail: string
+
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
