@@ -11,25 +11,24 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 ## Site Plan
-- Header (repeated header component on each page)
-- Footer (repeated footer component on each page)
-- Homepage (homepage component)
-  - What We Do (what we do component)
-  - Shop (list all component)
-    - Pipe to sort by T-Shirts, Tanks, Sweatshirts, Accessories, Sale
-    - Individual product page (component)
+- Header (repeated header component on each page) - complete
+- Footer (repeated footer component on each page) - complete
+- Homepage (homepage component) - component added but missing content
+  - What We Do (what we do component) - complete
+  - Shop (list all component) - complete
+    - Pipe to sort by T-Shirts, Tanks, Sweatshirts, Accessories, Sale - complete
+    - Individual product page (component) - complete
       - Add to cart select color, size, quantity (component)
     - Cart (list component)
       - Delete items (component)
       - Update item color, size, quantity (component)
-  - Resources (list all component)
-    - Individual resource view component
-  - Visuals (component)
-  - Contact (component)
-  - Action (component)
+  - Resources (list all component) - complete
+    - Individual resource view component - complete
+  - Contact (component) - complete
+  - Action (component) - complete
 
   Models
-  - Product model
+  - Product model - complete
     - Name: string
     - ID: string
     - Price: number
@@ -40,7 +39,7 @@ Run `ng generate component component-name` to generate a new component. You can 
     - Sale: boolean
     - Images: string[]
     - Featured: boolean
-  - Resource model
+  - Resource model - complete
     - Title: string
     - Content: string
     - Image: string
