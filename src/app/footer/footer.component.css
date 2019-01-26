@@ -15,3 +15,7 @@
   margin: 3px;
   height: 25px;
 }
+
+.icon-div:hover {
+  opacity: .7;
+}
