@@ -2,3 +2,16 @@
   padding-top: 30px;
   margin-top: 50px;
 }
+
+.social-icons {
+  width: 300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  margin: 0 auto;
+  margin-bottom: 35px;
+}
+
+.icon {
+  margin: 3px;
+  height: 25px;
+}
