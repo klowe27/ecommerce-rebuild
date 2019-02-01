@@ -8,6 +8,7 @@ import { ActionComponent } from './action/action.component';
 import { ResourceDetailComponent } from './resource-detail/resource-detail.component';
 import { ShopComponent } from "./shop/shop.component";
 import { ProductDetailComponent } from "./product-detail/product-detail.component";
+import { CartComponent } from './cart/cart.component';
 
 const appRoutes: Routes = [
   {
@@ -42,6 +43,10 @@ const appRoutes: Routes = [
   path: 'shop/:id',
   component: ProductDetailComponent
   },
+  {
+  path: 'cart',
+  component: CartComponent
+  }
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);

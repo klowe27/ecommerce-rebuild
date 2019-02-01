@@ -18,6 +18,7 @@ import { CategoryPipe } from './category.pipe';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireModule } from 'angularfire2';
 import { masterFirebaseConfig } from './api-keys';
+import { CartComponent } from './cart/cart.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -39,7 +40,8 @@ export const firebaseConfig = {
     ResourceDetailComponent,
     ShopComponent,
     ProductDetailComponent,
-    CategoryPipe
+    CategoryPipe,
+    CartComponent
   ],
   imports: [
     BrowserModule,
