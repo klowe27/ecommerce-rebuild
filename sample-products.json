@@ -96,5 +96,8 @@
   "sale": false,
   "featured": true,
   "images": ["flag.jpg", "flag.jpg", "flag.jpg"]
+}],
+"carts":[{
+  "name": "temp"
+}]
 }
-]}

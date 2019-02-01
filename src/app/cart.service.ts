@@ -11,8 +11,7 @@ import { CartItem } from './cart-item.model';
 export class CartService {
   user;
   isLoggedIn;
-  localCart: CartItem[] = [];
-  // cartProducts: FirebaseListObservable<any[]>;
+  cartItems: FirebaseListObservable<any[]>;
 
   constructor(private database: AngularFireDatabase, public afAuth: AngularFireAuth) {
     // this.user = afAuth.authState;
@@ -29,18 +28,19 @@ export class CartService {
     // if (this.isLoggedIn) {
     //   return this.cartProducts;
     // } else {
-      return this.localCart;
+      return this.cartItems;
     // }
   }
 
-  addToCart(product, qty: number) {
-    let cartItem = new CartItem(product, qty);
+  addToCart(productId, qty: number) {
+    let cartItem = new CartItem(productId, qty);
+    console.log(cartItem);
     // if (this.isLoggedIn) {
     //   let cart = this.database.list('carts/${this.user.uid}');
     //   cart.push({product: product, quantity: qty, color: color, size: size});
     // } else {
-      this.localCart.push(cartItem);
+      this.cartItems = this.database.list('carts/0')
+      this.cartItems.push(cartItem);
     // }
-    console.log(this.localCart);
   }
 }

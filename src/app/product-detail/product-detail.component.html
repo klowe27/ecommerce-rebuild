@@ -31,7 +31,7 @@
       <input #quantity type="number" name="quantity" class="form-control">
     </div>
 
-    <button type="button" class="add" (click)="addToCart(quantity.value)">Add to Cart</button><br>
+    <button type="button" class="add" (click)="addToCart(productToDisplay.$key, quantity.value)">Add to Cart</button><br>
     <a href="/shop"><button type="button" class="keep-shopping">Keep Shopping</button></a>
     <br><br>
     <h3>Info</h3>

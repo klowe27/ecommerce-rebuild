@@ -2,9 +2,9 @@ import { Product } from './product.model'
 
 export class CartItem {
   constructor (
-    public product: Product,
+    public productId: string,
     public quantity: number,
-    public color: string = '',
-    public size: string = '',
+    public color: string = 'N/A',
+    public size: string = 'N/A',
   ) { }
 }
