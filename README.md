@@ -1,4 +1,4 @@
-# Mastermind
+# Stonewall Wears
 
 #### Angular e-commerce site, 2.1.2019
 
@@ -11,40 +11,41 @@ This is an e-commerce site where users can browse products and add them to their
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
 
 ## Site Plan
-- Header (repeated header component on each page) - complete
-- Footer (repeated footer component on each page) - complete
-- Homepage (homepage component) - component added but missing content
-  - What We Do (what we do component) - complete
-  - Shop (list all component) - complete
+- Header component - complete
+- Footer component - complete
+- Authentication - complete
+- Homepage component - complete
+  - What We Do component - complete
+  - Shop component - complete
     - Pipe to sort by T-Shirts, Tanks, Sweatshirts, Accessories, Sale - complete
-    - Individual product page (component) - complete
+    - Individual product component - complete
       - Add to cart select color, size, quantity (component)
-    - Cart (list component)
-      - Delete items (component)
-      - Update item color, size, quantity (component)
-  - Resources (list all component) - complete
+    - Cart component
+      - Delete items
+  - Resources component - complete
     - Individual resource view component - complete
-  - Contact (component) - complete
-  - Action (component) - complete
+  - Contact component - complete
+  - Action component - complete
 
-  Models
-  - Product model - complete
-    - Name: string
-    - ID: string
-    - Price: number
-    - Colors: string[]
-    - Sizes: string[]
-    - Info: string
-    - Category: string
-    - Sale: boolean
-    - Images: string[]
-    - Featured: boolean
-  - Resource model - complete
-    - Title: string
-    - Content: string
-    - Image: string
 
-## Development Dependencies
+Models
+- Product model - complete
+  - Name: string
+  - ID: string
+  - Price: number
+  - Colors: string[]
+  - Sizes: string[]
+  - Info: string
+  - Category: string
+  - Sale: boolean
+  - Images: string[]
+  - Featured: boolean
+- Resource model - complete
+  - Title: string
+  - Content: string
+  - Image: string
+
+## Local Development Dependencies
 
 To clone this project and run it locally, you must first create a Firebase account. Create an api-keys.ts document stored in src/app/api-keys, and add your account credentials like this:
 
@@ -56,7 +57,11 @@ export const masterFirebaseConfig = {
     messagingSenderId: "xxxx"
   };
 
-Add this file to your .gitignore file (/src/app/api-keys.ts).
+Add /src/app/api-keys.ts to your .gitignore file. You can seed your database by importing sample-products.json into your Firebase database:
+* Visit your Firebase Console and select your project's database.
+* Click on the Database option in the left-hand navigational menu.
+* Select the 3 vertical dots on the right-hand side of the grey bar with your database URL on it. (It's right next to the + and - buttons). This should bring up a small menu.
+* Select Import JSON from this menu. This will result in a modal window prompting you to upload a file.
 
 ## Development server
 
