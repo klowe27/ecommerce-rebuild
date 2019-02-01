@@ -1,0 +1,100 @@
+{"products": [{
+  "name": "Pride Tshirt",
+  "price": 24,
+  "colors": ["gray", "red", "green"],
+  "sizes": ["Small", "Medium", "Large"],
+  "category": "T-shirt",
+  "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "sale": false,
+  "featured": true,
+  "images": ["flag.jpg", "flag.jpg", "flag.jpg"]
+},
+{
+  "name": "Pride Sweatshirt",
+  "price": 45,
+  "colors": ["gray", "red", "purple"],
+  "sizes": ["Small", "Medium", "Large", "X-Large"],
+  "category": "Sweatshirt",
+  "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "sale": true,
+  "featured": false,
+  "images": ["flag.jpg", "flag.jpg", "flag.jpg"]
+},
+{
+  "name": "Pride Tank",
+  "price": 18,
+  "colors": ["gray", "black", "red"],
+  "sizes": ["Small", "Medium", "Large", "X-Large"],
+  "category": "Tank",
+  "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "sale": true,
+  "featured": true,
+  "images": ["flag.jpg", "flag.jpg", "flag.jpg"]
+},
+{
+  "name": "Buttons",
+  "price": 10,
+  "colors": [],
+  "sizes": [],
+  "category": "Accessory",
+  "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "sale": true,
+  "featured": true,
+  "images": ["flag.jpg", "flag.jpg", "flag.jpg"]
+},
+{
+  "name": "Feminist Tshirt",
+  "price": 24,
+  "colors": ["gray", "red", "green"],
+  "sizes": ["Small", "Medium", "Large"],
+  "category": "T-shirt",
+  "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "sale": false,
+  "featured": true,
+  "images": ["flag.jpg", "flag.jpg", "flag.jpg"]
+},
+{
+  "name": "Feminist Sweatshirt",
+  "price": 24,
+  "colors": ["gray", "red", "green"],
+  "sizes": ["Small", "Medium", "Large"],
+  "category": "Sweatshirt",
+  "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "sale": true,
+  "featured": false,
+  "images": ["flag.jpg", "flag.jpg", "flag.jpg"]
+},
+{
+  "name": "Coasters",
+  "price": 12,
+  "colors": [],
+  "sizes": [],
+  "category": "Accessory",
+  "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "sale": false,
+  "featured": true,
+  "images": ["flag.jpg", "flag.jpg", "flag.jpg"]
+},
+{
+  "name": "Feminist Tank",
+  "price": 18,
+  "colors": ["gray", "red", "green"],
+  "sizes": ["Small", "Medium", "Large"],
+  "category": "Tank",
+  "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "sale": false,
+  "featured": false,
+  "images": ["flag.jpg", "flag.jpg", "flag.jpg"]
+},
+{
+  "name": "Poster",
+  "price": 8,
+  "colors": [],
+  "sizes": [],
+  "category": "Accessory",
+  "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "sale": false,
+  "featured": true,
+  "images": ["flag.jpg", "flag.jpg", "flag.jpg"]
+}
+]}
