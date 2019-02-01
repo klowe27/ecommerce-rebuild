@@ -8,17 +8,16 @@ import { Component, OnInit } from '@angular/core';
 export class HomepageComponent implements OnInit {
   slideIndex:number = 1;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }
 
-// Next/previous controls
   plusSlides(n) {
     this.showSlides(this.slideIndex += n);
   }
 
-// Thumbnail image controls
   currentSlide(n) {
     this.showSlides(this.slideIndex = n);
   }
