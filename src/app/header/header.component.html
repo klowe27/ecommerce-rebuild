@@ -14,11 +14,11 @@
 
   <div class="login">
       <div *ngIf="isLoggedIn">
-        <a>{{userName}}</a> | 
-        <a (click)="logout()">Log out</a>
+        <a class="name">{{userName}}</a> |
+        <a (click)="logout()" class="auth">Log out</a>
       </div>
       <div *ngIf ="!isLoggedIn">
-        <a (click)="login()">Log in</a>
+        <a (click)="login()" class="auth">Log in</a>
       </div>
   </div>
 </div>
