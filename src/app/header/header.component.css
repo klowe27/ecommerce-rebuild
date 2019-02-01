@@ -67,26 +67,26 @@
   color: #71B3A3;
 }
 
-.home:hover {
+.home:hover, .home-active {
   background-color: #71B3A3;
 }
 
-.about:hover {
+.about:hover, .about-active {
   background-color: #FFECA3;
 }
 
-.shop:hover {
+.shop:hover, .shop-active {
   background-color: red;
 }
-.resources:hover {
+.resources:hover, .resources-active {
   background-color: #5B87C3;
 }
 
-.contact:hover {
+.contact:hover, .contact-active {
   background-color: #FF6A9E;
 }
 
-.action:hover {
+.action:hover, .action-active {
   background-color: #C19FAC;
 }
 

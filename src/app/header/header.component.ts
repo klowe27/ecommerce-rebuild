@@ -9,6 +9,7 @@ import { AuthenticationService } from '../authentication.service';
 })
 export class HeaderComponent {
   user;
+  active: string;
   cartSize: number = 14;
   private isLoggedIn: Boolean;
   private userName: String;
@@ -23,6 +24,10 @@ export class HeaderComponent {
       }
     });
     }
+
+  menuClick(menuItem: string){
+    this.active = menuItem;
+  }
 
   login() {
     this.authService.login();
