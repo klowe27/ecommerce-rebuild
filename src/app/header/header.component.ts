@@ -27,6 +27,7 @@ export class HeaderComponent {
 
   menuClick(menuItem: string){
     this.active = menuItem;
+    console.log(this.active)
   }
 
   login() {
