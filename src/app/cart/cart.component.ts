@@ -3,6 +3,7 @@ import { CartService } from '../cart.service';
 import { CartItem } from '../cart-item.model';
 import { FirebaseListObservable } from 'angularfire2/database';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs/Observable';
 
 @Component({
   selector: 'app-cart',

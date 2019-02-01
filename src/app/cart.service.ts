@@ -23,12 +23,13 @@ export class CartService {
       } else {
         this.isLoggedIn = true;
         this.uid = user.uid;
+        this.cartItems = database.list('carts/'+this.uid);
       }
     });
   }
 
   getCart() {
-    return this.database.list(`carts/${this.uid}`);
+    this.cartItems;
   }
 
   addToCart(qty: number) {
