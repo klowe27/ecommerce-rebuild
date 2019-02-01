@@ -17,6 +17,7 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
 import { CategoryPipe } from './category.pipe';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireModule } from 'angularfire2';
+import { AngularFireAuthModule } from 'angularfire2/auth';
 import { masterFirebaseConfig } from './api-keys';
 import { CartComponent } from './cart/cart.component';
 
@@ -49,7 +50,8 @@ export const firebaseConfig = {
     HttpModule,
     routing,
     AngularFireModule.initializeApp(firebaseConfig),
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+    AngularFireAuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]

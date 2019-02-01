@@ -38,11 +38,19 @@
   color: white;
   background-color: #71B3A3;
   border-radius: 50%;
-  /* height: 20px;
-  width: 25px; */
   margin-top: 5px;
   margin-left: 5px;
   padding: 2px
+}
+
+.login {
+  position: fixed;
+  color: white;
+  background-color: gray;
+  width: 200px;
+  padding: 10px;
+  top: 0px;
+  right: 0px;
 }
 
 .home:hover {

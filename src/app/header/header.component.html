@@ -11,4 +11,14 @@
       <img src="../assets/images/shopping-cart.png" class="cart-image" alt="Shopping cart"><p class="cart-items">{{cartSize}}</p>
     </div></a>
   </div>
+
+  <div class="login">
+      <div *ngIf="isLoggedIn">
+        <a>{{userName}}</a> | 
+        <a (click)="logout()">Log out</a>
+      </div>
+      <div *ngIf ="!isLoggedIn">
+        <a (click)="login()">Log in</a>
+      </div>
+  </div>
 </div>
