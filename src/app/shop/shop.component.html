@@ -10,7 +10,7 @@
 </div>
 
 <div class="product-list">
-  <div class="product" *ngFor="let product of products | async" (click)="goToProductPage(product.$key)">
+  <div class="product" *ngFor="let product of products | async | category:filterByCategory" (click)="goToProductPage(product.$key)">
     <img src="assets/images/{{ product.images[0] }}">
     <h2>{{ product.name }}</h2>
     <h3>{{ product.price | currency }}</h3>

@@ -11,3 +11,8 @@
   width: 250px;
   margin-bottom: 20px;
 }
+
+.form-control {
+  margin-left: 17px;
+  width: 200px;
+}
