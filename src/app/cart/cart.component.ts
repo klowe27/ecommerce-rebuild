@@ -1,9 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { CartService } from '../cart.service';
 import { CartItem } from '../cart-item.model';
-import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
-import { Observable } from 'rxjs/Observable';
-import * as firebase from 'firebase/app';
+import { FirebaseListObservable } from 'angularfire2/database';
+import { Injectable } from '@angular/core';
 
 @Component({
   selector: 'app-cart',
@@ -12,14 +11,16 @@ import * as firebase from 'firebase/app';
   providers: [CartService]
 })
 export class CartComponent implements OnInit {
-  cartItems: FirebaseListObservable<any[]>;
+  cartItems;
 
   constructor(public cartService: CartService) {
-    this.cartItems = cartService.getCart();
-    console.log(this.cartItems);
   }
 
   ngOnInit() {
+    this.cartService.getCart().subscribe(cart => {
+      this.cartItems = cart;
+      console.log(this.cartItems);
+    });
   }
 
 }

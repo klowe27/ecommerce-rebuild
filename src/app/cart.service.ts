@@ -13,6 +13,7 @@ export class CartService {
   uid: string;
   isLoggedIn;
   localCart: CartItem[];
+  cartItems;
 
   constructor(private database: AngularFireDatabase, public afAuth: AngularFireAuth) {
     this.user = afAuth.authState;
@@ -27,15 +28,7 @@ export class CartService {
   }
 
   getCart() {
-    this.user.subscribe(user => {
-      if (user == null) {
-        return this.localCart;
-      } else {
-        this.database.list(`carts/${this.uid}`).subscribe(cart => {
-          return cart;
-        });
-      }
-    });
+    return this.database.list(`carts/${this.uid}`);
   }
 
   addToCart(qty: number) {

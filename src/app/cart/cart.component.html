@@ -1,6 +1,5 @@
 <div *ngFor cartItem of cartItems>
-  <!-- {{(cartItem | async)?.product.name}} -->
-  {{(cartItem | async)?.quantity}}
+  {{cartItem?.quantity}}
 
 </div>
 <hr>
