@@ -19,7 +19,7 @@ export class ProductDetailComponent implements OnInit {
   productId: string = "";
   productToDisplay: FirebaseObjectObservable<any>;
 
-  constructor(private route: ActivatedRoute, private location: Location, private productService: ProductService, private router: Router, private cartService: CartService,) { }
+  constructor(private route: ActivatedRoute, private location: Location, private productService: ProductService, private router: Router, private cartService: CartService) { }
 
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {

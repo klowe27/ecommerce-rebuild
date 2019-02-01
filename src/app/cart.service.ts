@@ -10,39 +10,41 @@ import { CartItem } from './cart-item.model';
 @Injectable()
 export class CartService {
   user;
+  uid: string;
   isLoggedIn;
-  cartItems: FirebaseListObservable<any[]>;
+  localCart: CartItem[];
 
   constructor(private database: AngularFireDatabase, public afAuth: AngularFireAuth) {
     this.user = afAuth.authState;
-    console.log(this.user.uid);
-    // this.user.subscribe(user => {
-    //   if (user == null) {
-    //     this.isLoggedIn = false;
-    //   } else {
-    //     this.isLoggedIn = true;
-    //   }
-    // });
+    this.user.subscribe(user => {
+      if (user == null) {
+        this.isLoggedIn = false;
+      } else {
+        this.isLoggedIn = true;
+        this.uid = user.uid;
+      }
+    });
   }
 
   getCart() {
-    // if (this.isLoggedIn) {
-    //   return this.cartProducts;
-    // } else {
-      return this.cartItems;
-    // }
+    this.user.subscribe(user => {
+      if (user == null) {
+        return this.localCart;
+      } else {
+        this.database.list(`carts/${this.uid}`).subscribe(cart => {
+          return cart;
+        });
+      }
+    });
   }
 
   addToCart(qty: number) {
     let cartItem = new CartItem(qty);
-    console.log(this.user.uid);
-    // if (this.isLoggedIn) {
-    //   let cart = this.database.list('carts/${this.user.uid}');
-    //   cart.push({product: product, quantity: qty, color: color, size: size});
-    // } else {
-    let userId = this.user.uid;
-      this.cartItems = this.database.list('carts/'+ userId)
-      this.cartItems.push(cartItem);
-    // }
+    if (this.isLoggedIn) {
+      let cart = this.database.list(`carts/${this.uid}`);
+      cart.push(cartItem);
+    } else {
+      this.localCart.push(cartItem);
+    }
   }
 }
