@@ -10,9 +10,11 @@
 </div>
 
 <div class="product-list">
-  <div class="product" *ngFor="let product of products | category:filterByCategory" (click)="goToProductPage(product)">
+  <div class="product" *ngFor="let product of products | async" (click)="goToProductPage(product.$key)">
     <img src="assets/images/{{ product.images[0] }}">
     <h2>{{ product.name }}</h2>
     <h3>{{ product.price | currency }}</h3>
   </div>
 </div>
+
+<!-- (class | async)?.numberOfStudent -->
