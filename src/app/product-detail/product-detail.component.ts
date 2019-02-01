@@ -11,15 +11,15 @@ import { ProductService } from '../product.service';
   providers: [ProductService]
 })
 export class ProductDetailComponent implements OnInit {
-  productId: number = null;
-  productToDisplay: Product;
+  productId: string = "";
+  productToDisplay;
 
   constructor(private route: ActivatedRoute, private location: Location, private productService: ProductService) { }
 
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {
-    this.productId = urlParameters['id'];
+      this.productId = urlParameters['id'];
     });
-    this.productToDisplay = this.productService.getProductById(parseInt(this.productId));
+    this.productToDisplay = this.productService.getProductById(this.productId);
   }
 }
