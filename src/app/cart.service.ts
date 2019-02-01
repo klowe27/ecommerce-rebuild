@@ -32,9 +32,9 @@ export class CartService {
     // }
   }
 
-  addToCart(productId, qty: number) {
-    let cartItem = new CartItem(productId, qty);
-    console.log(cartItem);
+  addToCart(product, qty: number) {
+    let cartItem = new CartItem(product.subscribe(product => product.name), qty);
+    console.log(product);
     // if (this.isLoggedIn) {
     //   let cart = this.database.list('carts/${this.user.uid}');
     //   cart.push({product: product, quantity: qty, color: color, size: size});

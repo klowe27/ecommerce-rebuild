@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Product } from './product.model';
 // import { PRODUCTS } from './mock-products';
-import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
+import { AngularFireDatabase, FirebaseListObservable, FirebaseObjectObservable } from 'angularfire2/database';
 
 
 @Injectable()

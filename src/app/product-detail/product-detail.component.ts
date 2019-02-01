@@ -5,7 +5,7 @@ import { Router } from '@angular/router';
 import { Product } from '../product.model';
 import { ProductService } from '../product.service';
 import { CartService } from '../cart.service';
-import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
+import { AngularFireDatabase, FirebaseListObservable, FirebaseObjectObservable } from 'angularfire2/database';
 import { Observable } from 'rxjs/Observable';
 
 
@@ -17,7 +17,7 @@ import { Observable } from 'rxjs/Observable';
 })
 export class ProductDetailComponent implements OnInit {
   productId: string = "";
-  productToDisplay;
+  productToDisplay: FirebaseObjectObservable<any>;
 
   constructor(private route: ActivatedRoute, private location: Location, private productService: ProductService, private router: Router, private cartService: CartService,) { }
 
@@ -28,9 +28,8 @@ export class ProductDetailComponent implements OnInit {
     this.productToDisplay = this.productService.getProductById(this.productId);
   }
 
-  addToCart(productId: string, qty: number){
-    console.log(productId);
-    this.cartService.addToCart(productId, qty);
+  addToCart(qty: number){
+    this.cartService.addToCart(this.productToDisplay, qty);
     this.router.navigate(['cart']);
   }
 
