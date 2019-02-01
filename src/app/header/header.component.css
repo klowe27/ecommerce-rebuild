@@ -90,6 +90,11 @@
   background-color: #C19FAC;
 }
 
+a {
+  color: black;
+}
+
 a:hover {
   text-decoration: none;
+  color: black;
 }
