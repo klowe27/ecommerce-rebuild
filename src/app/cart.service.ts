@@ -5,6 +5,7 @@ import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/databa
 
 @Injectable()
 export class CartService {
+  localCart: any[];
   cartProducts: FirebaseListObservable<any[]>;
 
   constructor(private database: AngularFireDatabase) {
@@ -15,4 +16,7 @@ export class CartService {
     return this.cartProducts;
   }
 
+  addToCart(product: Product, qty: number, color: string, size: string) {
+    this.localCart.push([product, qty, color, size])
+  }
 }
