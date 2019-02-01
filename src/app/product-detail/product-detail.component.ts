@@ -26,8 +26,8 @@ export class ProductDetailComponent implements OnInit {
     this.productToDisplay = this.productService.getProductById(this.productId);
   }
 
-  addToCart(product: Product, qty: number, color: string, size: string, ){
-    this.cartService.addToCart(product, qty, color, size);
+  addToCart(qty: number){
+    this.cartService.addToCart(this.productToDisplay, qty);
     this.router.navigate(['cart']);
   }
 
