@@ -14,7 +14,8 @@ export class CartService {
   cartItems: FirebaseListObservable<any[]>;
 
   constructor(private database: AngularFireDatabase, public afAuth: AngularFireAuth) {
-    // this.user = afAuth.authState;
+    this.user = afAuth.authState;
+    console.log(this.user.uid);
     // this.user.subscribe(user => {
     //   if (user == null) {
     //     this.isLoggedIn = false;
@@ -32,14 +33,15 @@ export class CartService {
     // }
   }
 
-  addToCart(product, qty: number) {
-    let cartItem = new CartItem(product.subscribe(product => product.name), qty);
-    console.log(product);
+  addToCart(qty: number) {
+    let cartItem = new CartItem(qty);
+    console.log(this.user.uid);
     // if (this.isLoggedIn) {
     //   let cart = this.database.list('carts/${this.user.uid}');
     //   cart.push({product: product, quantity: qty, color: color, size: size});
     // } else {
-      this.cartItems = this.database.list('carts/0')
+    let userId = this.user.uid;
+      this.cartItems = this.database.list('carts/'+ userId)
       this.cartItems.push(cartItem);
     // }
   }

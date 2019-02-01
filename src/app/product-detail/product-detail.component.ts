@@ -29,7 +29,7 @@ export class ProductDetailComponent implements OnInit {
   }
 
   addToCart(qty: number){
-    this.cartService.addToCart(this.productToDisplay, qty);
+    this.cartService.addToCart(qty);
     this.router.navigate(['cart']);
   }
 
