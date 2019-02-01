@@ -1,3 +1,6 @@
-<p>
-  cart works!
-</p>
+<div *ngFor cartItem of cartProducts>
+  {{cartItem.product.name}}
+  {{cartItem.quantity}}
+
+</div>
+<hr>
