@@ -5,9 +5,10 @@
 
 .menu {
   display: grid;
-  width: 650px;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  width: 700px;
+  display: flex;
   margin: 0 auto;
+  justify-content: space-around;
 }
 
 .menu-item {
@@ -17,6 +18,31 @@
   text-transform: uppercase;
   padding: 2px;
   color: black;
+}
+
+.cart {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.cart:hover {
+  opacity: .8;
+}
+
+.cart-image {
+  width: 25px;
+}
+
+.cart-items {
+  font-size: 12px;
+  color: white;
+  background-color: #71B3A3;
+  border-radius: 50%;
+  /* height: 20px;
+  width: 25px; */
+  margin-top: 5px;
+  margin-left: 5px;
+  padding: 2px
 }
 
 .home:hover {
