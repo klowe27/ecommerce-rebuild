@@ -3,8 +3,17 @@
   grid-template-columns: 1fr 1.5fr;
 }
 
+.product-images {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  overflow-x: auto;
+}
+
 .product-images img {
   width: 300px;
+  flex-shrink: 0;
+  height: 100%;
 }
 
 .product-info {
