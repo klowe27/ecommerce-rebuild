@@ -1,18 +1,24 @@
 <div class="slideshow-container">
 
-  <div *ngIf="slideIndex == 1" class="mySlides fade">
+  <div *ngIf="slideIndex == 1">
     <img src="assets/images/hero1.jpg" style="width:100%">
-    <div class="text">Caption Text</div>
+    <div class="text"><h2 class="caption">supporting LGBTQ rights</h2>
+      <a href="/what-we-do"><button class="hero-button">About Us</button></a>
+    </div>
   </div>
 
-  <div *ngIf="slideIndex == 2" class="mySlides fade">
+  <div *ngIf="slideIndex == 2">
     <img src="assets/images/hero2.jpg" style="width:100%">
-    <div class="text">Caption Two</div>
+    <div class="text"><h2 class="caption">Learn how you can contribute</h2>
+      <a href="/action"><button class="hero-button">Take Action</button></a>
+    </div>
   </div>
 
-  <div *ngIf="slideIndex == 3" class="mySlides fade">
+  <div *ngIf="slideIndex == 3">
     <img src="assets/images/hero3.jpg" style="width:100%">
-    <div class="text">Caption Three</div>
+    <div class="text"><h2 class="caption">Explore Styles in our store</h2>
+      <a href="/shop"><button class="hero-button">Shop</button></a>
+    </div>
   </div>
 
   <a class="prev" (click)="plusSlides(-1)">&#10094;</a>
@@ -20,11 +26,11 @@
 </div>
 <br>
 
-<div style="text-align:center">
-  <span *ngIf="currentSlide != 1" class="dot"></span>
+<div style="text-align:center dots">
+  <span *ngIf="currentSlide != 1" (click)="slideIndex = 1" class="dot"></span>
   <span *ngIf="currentSlide == 1" class="dot active"></span>
-  <span *ngIf="currentSlide != 2" class="dot"></span>
+  <span *ngIf="currentSlide != 2" (click)="slideIndex = 2" class="dot"></span>
   <span *ngIf="currentSlide == 2" class="dot active"></span>
-  <span *ngIf="currentSlide != 3" class="dot"></span>
+  <span *ngIf="currentSlide != 3" (click)="slideIndex = 3" class="dot"></span>
   <span *ngIf="currentSlide == 3" class="dot active"></span>
 </div>
