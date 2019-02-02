@@ -18,6 +18,8 @@ import { Observable } from 'rxjs/Observable';
 export class ProductDetailComponent implements OnInit {
   productId: string = "";
   productToDisplay: FirebaseObjectObservable<any>;
+  size: string = "small";
+  color: string = "black";
 
   constructor(private route: ActivatedRoute, private location: Location, private productService: ProductService, private router: Router, private cartService: CartService) { }
 
@@ -30,9 +32,11 @@ export class ProductDetailComponent implements OnInit {
     });
   }
 
-  addToCart(qty: number, size: string, color: string){
-    console.log(size);
-    this.cartService.addToCart(qty);
+  addToCart(qty: string){
+    this.productService.getProductById(this.productId).subscribe(product => {
+      this.productToDisplay = product;
+    });
+    this.cartService.addToCart(this.productToDisplay, parseInt(qty), this.size, this.color);
     this.router.navigate(['cart']);
   }
 

@@ -27,8 +27,8 @@ export class CartService {
     });
   }
 
-  addToCart(qty){
-    let newItem = new CartItem(qty);
+  addToCart(product, qty: number, size: string, color: string){
+    let newItem = new CartItem(product, qty, size, color);
     let cart = this.database.list(`carts/${this.uid}`);
     cart.push(newItem);
   }

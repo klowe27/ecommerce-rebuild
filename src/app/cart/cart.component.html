@@ -1,5 +1,24 @@
-<div *ngFor="let item of cartItems">
-  <p>Qty: {{item?.quantity}}</p>
-  <button (click)="removeFromCart(item)">Delete</button>
+<div *ngIf="cartItems?.length > 0">
   <hr>
+  <div *ngFor="let item of cartItems">
+    <div class="cart-item">
+      <div><img src="assets/images/{{ item?.product.images[0] }}" alt="{{item?.product.name}}"></div>
+      <div class="details">
+        <h3>{{item?.product.name}}</h3>
+        <p>Size: {{ item?.size }}<br>
+        Color: {{ item?.color }}<br>
+        Price: {{item?.product.price | currency }}</p>
+      </div>
+      <div><p>Qty: {{item?.quantity}}</p></div>
+      <div><p>{{ (item?.product.price* item?.quantity) | currency }}</p></div>
+      <div><p class="delete" (click)="removeFromCart(item)">x</p></div>
+    </div>
+    <hr>
+  </div>
+  <a href="/shop"><button class="keep-shopping">Keep Shopping</button></a>
+  <button class="checkout">Checkout</button>
+</div>
+
+<div *ngIf="cartItems?.length === 0">
+  <p>Your cart is empty. <a href="/shop">Keep shopping.</a></p>
 </div>
