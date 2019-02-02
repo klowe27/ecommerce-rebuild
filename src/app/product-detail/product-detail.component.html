@@ -11,15 +11,15 @@
 
     <h2>{{ productToDisplay?.name }}</h2>
     <h2>{{ productToDisplay?.price | currency }}</h2>
-<!--
-    <div *ngIf="productToDisplay?.colors.length > 0"class="form-group">
+
+    <div class="form-group">
       <label for="color">Select color</label>
       <select #color class="form-control">
         <option *ngFor="let color of productToDisplay?.colors" [ngValue]="color">{{ color }}</option>
       </select>
-    </div> -->
+    </div>
 
-    <div *ngIf="productToDisplay?.sizes.length > 0" class="form-group">
+    <div class="form-group">
       <label for="size">Select Size</label>
       <select class="form-control" #size>
         <option *ngFor="let size of productToDisplay?.sizes" [value]="size">{{ size }}</option>
