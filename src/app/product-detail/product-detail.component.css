@@ -3,6 +3,23 @@
   grid-template-columns: 1fr 1.5fr;
 }
 
+.alert {
+  position: fixed;
+  width: 375px;
+  height: 48px;
+  top: 65px;
+  left: 50%;
+  margin-left: -187.5px;
+  color: white;
+  background-color: rgba(49, 137, 239, .9);
+  border: solid 1px #3189ef;
+  text-align: center;
+}
+
+.close {
+  float: right;
+}
+
 .product-images {
   margin-right: 20px;
   margin-bottom: 10px;
