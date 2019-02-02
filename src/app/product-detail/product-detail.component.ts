@@ -25,10 +25,13 @@ export class ProductDetailComponent implements OnInit {
     this.route.params.forEach((urlParameters) => {
       this.productId = urlParameters['id'];
     });
-    this.productToDisplay = this.productService.getProductById(this.productId);
+    this.productService.getProductById(this.productId).subscribe(product => {
+      this.productToDisplay = product;
+    });
   }
 
-  addToCart(qty: number){
+  addToCart(qty: number, size: string, color: string){
+    console.log(size);
     this.cartService.addToCart(qty);
     this.router.navigate(['cart']);
   }

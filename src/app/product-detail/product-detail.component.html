@@ -1,40 +1,40 @@
 <div class="product-details">
   <div class="images">
     <div class="product-images">
-      <div *ngFor="let image of (productToDisplay | async)?.images"><img src="assets/images/{{ image }}" alt="{{ (productToDisplay | async)?.name }}"></div>
+      <div *ngFor="let image of productToDisplay?.images"><img src="assets/images/{{ image }}" alt="{{ productToDisplay?.name }}"></div>
     </div>
     <div class="product-images-thumbnails">
-      <div *ngFor="let image of (productToDisplay | async)?.images"><img src="assets/images/{{ image }}" alt="{{ (productToDisplay | async)?.name }}"></div>
+      <div *ngFor="let image of productToDisplay?.images"><img src="assets/images/{{ image }}" alt="{{ productToDisplay?.name }}"></div>
     </div>
   </div>
   <div class="product-info">
 
-    <h2>{{ (productToDisplay | async)?.name }}</h2>
-    <h2>{{ (productToDisplay | async)?.price | currency }}</h2>
+    <h2>{{ productToDisplay?.name }}</h2>
+    <h2>{{ productToDisplay?.price | currency }}</h2>
 
-    <!-- <div *ngIf="(productToDisplay | async)?.colors !== []"class="form-group">
+    <div *ngIf="productToDisplay?.colors.length > 0"class="form-group">
       <label for="color">Select color</label>
       <select #color class="form-control">
-        <option *ngFor="let color of (productToDisplay | async)?.colors" [value]="{{color}}">{{ color }}</option>
+        <option *ngFor="let color of productToDisplay?.colors" [value]="color">{{ color }}</option>
       </select>
     </div>
 
-    <div *ngIf="(productToDisplay | async)?.sizes !== []" class="form-group">
+    <div *ngIf="productToDisplay?.sizes.length > 0" class="form-group">
       <label for="size">Select Size</label>
       <select #size class="form-control">
-        <option *ngFor="let size of (productToDisplay | async)?.sizes" value="{{size}}">{{ size }}</option>
+        <option *ngFor="let size of productToDisplay?.sizes" [value]="size">{{ size }}</option>
       </select>
-    </div> -->
+    </div>
 
     <div class="form-group">
       <label for="quantity">Quantity</label>
       <input #quantity type="number" name="quantity" class="form-control">
     </div>
 
-    <button type="button" class="add" (click)="addToCart(quantity.value)">Add to Cart</button><br>
+    <button type="button" class="add" (click)="addToCart(quantity.value, size.value, color.value)">Add to Cart</button><br>
     <a href="/shop"><button type="button" class="keep-shopping">Keep Shopping</button></a>
     <br><br>
     <h3>Info</h3>
-    <p>{{ (productToDisplay | async)?.info }}</p>
+    <p>{{ productToDisplay?.info }}</p>
   </div>
 </div>
