@@ -1,6 +1,6 @@
 # Stonewall Wears
 
-#### Angular e-commerce site, 2.1.2019
+#### Angular/Firebase e-commerce site, 2.1.2019
 
 #### By Kristin Brewer-Lowe
 
@@ -11,41 +11,37 @@ This is an e-commerce site where users can browse products and add them to their
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
 
 ## Site Plan
-- Header component - complete
-- Footer component - complete
-- Authentication - complete
-- Homepage component - complete
-  - What We Do component - complete
-  - Shop component - complete
-    - Pipe to sort by T-Shirts, Tanks, Sweatshirts, Accessories, Sale - complete
-    - Individual product component - complete
-      - Add to cart select color, size, quantity (component)
-    - Cart component
-      - Delete items
-  - Resources component - complete
-    - Individual resource view component - complete
-  - Contact component - complete
-  - Action component - complete
-
+- Header component (complete)
+- Footer component (complete)
+- Authentication (complete)
+- Homepage component (complete)
+- What We Do component (complete)
+- Shop component (complete)
+  - Pipe to sort by category (complete)
+  - Individual product component (complete)
+    - Add to cart select color, size, quantity (complete)
+  - Cart component (complete)
+    - Delete items (complete)
+- Resources component (complete)
+  - Individual resource view component (complete)
+- Contact component (complete)
+- Action component (complete)
 
 Models
-- Product model - complete
+- Product model (complete)
   - Name: string
-  - ID: string
   - Price: number
   - Colors: string[]
   - Sizes: string[]
   - Info: string
   - Category: string
-  - Sale: boolean
   - Images: string[]
-  - Featured: boolean
-- Resource model - complete
+- Resource model (complete)
   - Title: string
   - Content: string
   - Image: string
 
-## Local Development Dependencies
+## Local development dependencies
 
 To clone this project and run it locally, you must first create a Firebase account. Create an api-keys.ts document stored in src/app/api-keys, and add your account credentials like this:
 
