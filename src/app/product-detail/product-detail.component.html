@@ -1,10 +1,12 @@
 <div class="product-details">
   <div class="images">
     <div class="product-images">
-      <div *ngFor="let image of productToDisplay?.images"><img src="assets/images/{{ image }}" alt="{{ productToDisplay?.name }}"></div>
+
+      <div *ngFor="let image of productToDisplay?.images"><img *ngIf="imageToDisplay == image" src="assets/images/{{ image }}" alt="{{ productToDisplay?.name }}"></div>
     </div>
+
     <div class="product-images-thumbnails">
-      <div *ngFor="let image of productToDisplay?.images"><img src="assets/images/{{ image }}" alt="{{ productToDisplay?.name }}"></div>
+      <div *ngFor="let image of productToDisplay?.images" (click)="changeImage(image)"><img src="assets/images/{{ image }}" alt="{{ productToDisplay?.name }}"></div>
     </div>
   </div>
   <div class="product-info">

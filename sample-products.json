@@ -5,7 +5,7 @@
   "sizes": ["Small", "Medium", "Large"],
   "category": "T-Shirt",
   "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  "images": ["flag.jpg", "flag.jpg", "flag.jpg"]
+  "images": ["tshirt1.jpg", "tshirt2.jpg"]
 },
 {
   "name": "Pride Sweatshirt",
@@ -14,7 +14,7 @@
   "sizes": ["Small", "Medium", "Large", "X-Large"],
   "category": "Sweatshirt",
   "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  "images": ["flag.jpg", "flag.jpg", "flag.jpg"]
+  "images": ["tshirt1.jpg", "tshirt2.jpg"]
 },
 {
   "name": "Pride Tank",
@@ -23,7 +23,7 @@
   "sizes": ["Small", "Medium", "Large", "X-Large"],
   "category": "Tank",
   "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  "images": ["flag.jpg", "flag.jpg", "flag.jpg"]
+  "images": ["tshirt1.jpg", "tshirt2.jpg"]
 },
 {
   "name": "Rainbow Tank",
@@ -32,7 +32,7 @@
   "sizes": ["Small", "Medium", "Large"],
   "category": "Tank",
   "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  "images": ["flag.jpg", "flag.jpg", "flag.jpg"]
+  "images": ["tshirt1.jpg", "tshirt2.jpg"]
 },
 {
   "name": "Feminist Tshirt",
@@ -41,7 +41,7 @@
   "sizes": ["Small", "Medium", "Large"],
   "category": "T-Shirt",
   "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  "images": ["flag.jpg", "flag.jpg", "flag.jpg"]
+  "images": ["tshirt1.jpg", "tshirt2.jpg"]
 },
 {
   "name": "Feminist Sweatshirt",
@@ -50,7 +50,7 @@
   "sizes": ["Small", "Medium", "Large"],
   "category": "Sweatshirt",
   "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  "images": ["flag.jpg", "flag.jpg", "flag.jpg"]
+  "images": ["tshirt1.jpg", "tshirt2.jpg"]
 },
 {
   "name": "Rainbow Sweatshirt",
@@ -59,7 +59,7 @@
   "sizes": ["Small", "Medium", "Large"],
   "category": "Sweatshirt",
   "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  "images": ["flag.jpg", "flag.jpg", "flag.jpg"]
+  "images": ["tshirt1.jpg", "tshirt2.jpg"]
 },
 {
   "name": "Feminist Tank",
@@ -68,7 +68,7 @@
   "sizes": ["Small", "Medium", "Large"],
   "category": "Tank",
   "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  "images": ["flag.jpg", "flag.jpg", "flag.jpg"]
+  "images": ["tshirt1.jpg", "tshirt2.jpg"]
 },
 {
   "name": "Rainbow Tshirt",
@@ -77,6 +77,6 @@
   "sizes": ["Small", "Medium", "Large"],
   "category": "T-Shirt",
   "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  "images": ["flag.jpg", "flag.jpg", "flag.jpg"]
+  "images": ["tshirt1.jpg", "tshirt2.jpg"]
 }]
 }

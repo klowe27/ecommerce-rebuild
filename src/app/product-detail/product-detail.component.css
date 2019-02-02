@@ -4,18 +4,15 @@
 }
 
 .product-images {
-  width: 300px;
-  height: 300px;
-  display: flex;
-  overflow-x: auto;
   margin-right: 20px;
   margin-bottom: 10px;
+  background-color: gray;
+  float: left;
+  margin-left: 20px;
 }
 
 .product-images img {
   width: 300px;
-  flex-shrink: 0;
-  height: 100%;
 }
 
 .product-images-thumbnails {
@@ -23,11 +20,13 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   float: left;
+  margin-left: 20px;
 }
 
 .product-images-thumbnails img{
   width: 50px;
   height: 50px;
+  margin-right: 10px;
 }
 
 .product-info {

@@ -20,6 +20,7 @@ export class ProductDetailComponent implements OnInit {
   productToDisplay: FirebaseObjectObservable<any>;
   size: string = "";
   color: string = "";
+  imageToDisplay: string;
 
   constructor(private route: ActivatedRoute, private location: Location, private productService: ProductService, private router: Router, private cartService: CartService) { }
 
@@ -29,6 +30,7 @@ export class ProductDetailComponent implements OnInit {
     });
     this.productService.getProductById(this.productId).subscribe(product => {
       this.productToDisplay = product;
+      this.imageToDisplay = product.images[0];
     });
   }
 
@@ -46,6 +48,10 @@ export class ProductDetailComponent implements OnInit {
 
   selectColor(color) {
     this.color = color;
+  }
+
+  changeImage(image) {
+    this.imageToDisplay = image;
   }
 
 }
