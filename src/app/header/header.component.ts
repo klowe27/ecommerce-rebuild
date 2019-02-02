@@ -11,7 +11,6 @@ import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/databa
 })
 export class HeaderComponent {
   user;
-  active: string;
   cartSize: number = 0;
   private isLoggedIn: Boolean;
   private userName: String;
@@ -28,11 +27,6 @@ export class HeaderComponent {
         });
       }
     });
-    }
-
-  menuClick(menuItem: string){
-    this.active = menuItem;
-    console.log(this.active)
   }
 
   login() {
