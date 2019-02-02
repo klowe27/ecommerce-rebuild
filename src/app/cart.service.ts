@@ -32,4 +32,14 @@ export class CartService {
     let cart = this.database.list(`carts/${this.uid}`);
     cart.push(newItem);
   }
+
+  removeFromCart(item) {
+    let itemEntryInFirebase = this.getCartItemById(item.$key);
+    itemEntryInFirebase.remove();
+  }
+
+  getCartItemById(itemId: string){
+    return this.database.object(`carts/${this.uid}/${itemId}`);
+  }
+
 }

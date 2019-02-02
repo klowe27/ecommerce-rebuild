@@ -34,4 +34,7 @@ export class CartComponent implements OnInit {
     });
   }
 
+  removeFromCart(itemToDelete) {
+    this.cartService.removeFromCart(itemToDelete);
+  }
 }
