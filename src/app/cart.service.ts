@@ -26,28 +26,3 @@ export class CartService {
       }
     });
   }
-
-  getCart() {
-    let cartContents;
-    this.user = this.afAuth.authState;
-    this.user.subscribe(user => {
-      if (user == null) {
-      } else {
-        let uid = user.uid;
-        cartContents = this.database.list(`carts/${uid}`)
-      }
-    });
-    console.log(cartContents);
-    return cartContents;
-  }
-
-  addToCart(qty: number) {
-    let cartItem = new CartItem(qty);
-    if (this.isLoggedIn) {
-      let cart = this.database.list(`carts/${this.uid}`);
-      cart.push(cartItem);
-    } else {
-      this.localCart.push(cartItem);
-    }
-  }
-}
