@@ -1,7 +1,14 @@
 img {
   margin-bottom: 30px;
+  width: flex;
 }
 
 h2 {
   margin-top: 20px;
 }
+
+/* @media only screen and (max-width: 600px) {
+  img {
+    width: 300px;
+  }
+} */

@@ -16,3 +16,11 @@ h2 {
 p {
   margin-bottom: 30px;
 }
+
+@media only screen and (max-width: 600px) {
+  .whatWeDo img {
+    width: 150px;
+    margin: 10px;
+    margin-right: 20px;
+  }
+}
