@@ -1,5 +1,4 @@
-<div *ngFor cartItem of cartItems>
-  {{cartItem?.quantity}}
-
+<div *ngFor="let item of cartItems">
+  <p>Qty: {{item?.quantity}}</p>
+  <hr>
 </div>
-<hr>

@@ -28,7 +28,9 @@ export class CartComponent implements OnInit {
       } else {
         this.database.list(`carts/${user.uid}`).subscribe(cart =>{
           this.cartItems = cart;
-        });      }
+          console.log(cart);
+        });
+      }
     });
   }
 
