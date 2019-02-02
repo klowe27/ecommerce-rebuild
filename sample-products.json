@@ -5,8 +5,6 @@
   "sizes": ["Small", "Medium", "Large"],
   "category": "T-Shirt",
   "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  "sale": false,
-  "featured": true,
   "images": ["flag.jpg", "flag.jpg", "flag.jpg"]
 },
 {
@@ -16,8 +14,6 @@
   "sizes": ["Small", "Medium", "Large", "X-Large"],
   "category": "Sweatshirt",
   "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  "sale": true,
-  "featured": false,
   "images": ["flag.jpg", "flag.jpg", "flag.jpg"]
 },
 {
@@ -27,19 +23,15 @@
   "sizes": ["Small", "Medium", "Large", "X-Large"],
   "category": "Tank",
   "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  "sale": true,
-  "featured": true,
   "images": ["flag.jpg", "flag.jpg", "flag.jpg"]
 },
 {
-  "name": "Buttons",
-  "price": 10,
-  "colors": [],
-  "sizes": [],
-  "category": "Accessory",
+  "name": "Rainbow Tank",
+  "price": 18,
+  "colors": ["gray", "red", "green"],
+  "sizes": ["Small", "Medium", "Large"],
+  "category": "Tank",
   "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  "sale": true,
-  "featured": true,
   "images": ["flag.jpg", "flag.jpg", "flag.jpg"]
 },
 {
@@ -49,30 +41,24 @@
   "sizes": ["Small", "Medium", "Large"],
   "category": "T-Shirt",
   "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  "sale": false,
-  "featured": true,
   "images": ["flag.jpg", "flag.jpg", "flag.jpg"]
 },
 {
   "name": "Feminist Sweatshirt",
-  "price": 24,
+  "price": 45,
   "colors": ["gray", "red", "green"],
   "sizes": ["Small", "Medium", "Large"],
   "category": "Sweatshirt",
   "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  "sale": true,
-  "featured": false,
   "images": ["flag.jpg", "flag.jpg", "flag.jpg"]
 },
 {
-  "name": "Coasters",
-  "price": 12,
-  "colors": [],
-  "sizes": [],
-  "category": "Accessory",
+  "name": "Rainbow Sweatshirt",
+  "price": 45,
+  "colors": ["gray", "red", "green"],
+  "sizes": ["Small", "Medium", "Large"],
+  "category": "Sweatshirt",
   "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  "sale": false,
-  "featured": true,
   "images": ["flag.jpg", "flag.jpg", "flag.jpg"]
 },
 {
@@ -82,22 +68,17 @@
   "sizes": ["Small", "Medium", "Large"],
   "category": "Tank",
   "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  "sale": false,
-  "featured": false,
   "images": ["flag.jpg", "flag.jpg", "flag.jpg"]
 },
 {
-  "name": "Poster",
-  "price": 8,
-  "colors": [],
-  "sizes": [],
-  "category": "Accessory",
+  "name": "Rainbow Tshirt",
+  "price": 24,
+  "colors": ["gray", "red", "green"],
+  "sizes": ["Small", "Medium", "Large"],
+  "category": "T-Shirt",
   "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  "sale": false,
-  "featured": true,
   "images": ["flag.jpg", "flag.jpg", "flag.jpg"]
 }],
 "carts":[{
-  "name": "temp"
 }]
 }

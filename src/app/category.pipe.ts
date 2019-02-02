@@ -12,26 +12,16 @@ export class CategoryPipe implements PipeTransform {
   transform(input: Product[], category){
     let output: Product[] = [];
     if (input) {
-      if (category == "T-Shirt" || category == "Sweatshirt" || category == "Accessory" || category == "Tank") {
+      if (category == "T-Shirt" || category == "Sweatshirt" || category == "Tank") {
         for (var i = 0; i < input.length; i++) {
           if (input[i].category === category) {
             output.push(input[i]);
           }
         }
-      } else if (category == "Sale") {
-        for (var i = 0; i < input.length; i++) {
-          if (input[i].sale === true) {
-            output.push(input[i]);
-          }
-        }
       } else {
-        for (var i = 0; i < input.length; i++) {
-          if (input[i].featured === true) {
-            output.push(input[i]);
-          }
+          return input;
         }
       }
+      return output;
     }
-    return output;
   }
-}
