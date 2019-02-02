@@ -1,7 +1,7 @@
 {"products": [{
   "name": "Pride Tshirt",
   "price": 24,
-  "colors": ["gray", "red", "green"],
+  "colors": ["Gray", "Red", "Green"],
   "sizes": ["Small", "Medium", "Large"],
   "category": "T-Shirt",
   "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -10,7 +10,7 @@
 {
   "name": "Pride Sweatshirt",
   "price": 45,
-  "colors": ["gray", "red", "purple"],
+  "colors": ["Gray", "Red", "Purple"],
   "sizes": ["Small", "Medium", "Large", "X-Large"],
   "category": "Sweatshirt",
   "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -19,7 +19,7 @@
 {
   "name": "Pride Tank",
   "price": 18,
-  "colors": ["gray", "black", "red"],
+  "colors": ["Gray", "Black", "Red"],
   "sizes": ["Small", "Medium", "Large", "X-Large"],
   "category": "Tank",
   "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -28,7 +28,7 @@
 {
   "name": "Rainbow Tank",
   "price": 18,
-  "colors": ["gray", "red", "green"],
+  "colors": ["Gray", "Red", "Green"],
   "sizes": ["Small", "Medium", "Large"],
   "category": "Tank",
   "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -37,7 +37,7 @@
 {
   "name": "Feminist Tshirt",
   "price": 24,
-  "colors": ["gray", "red", "green"],
+  "colors": ["Gray", "Red", "Green"],
   "sizes": ["Small", "Medium", "Large"],
   "category": "T-Shirt",
   "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -46,7 +46,7 @@
 {
   "name": "Feminist Sweatshirt",
   "price": 45,
-  "colors": ["gray", "red", "green"],
+  "colors": ["Gray", "Red", "Green"],
   "sizes": ["Small", "Medium", "Large"],
   "category": "Sweatshirt",
   "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -55,7 +55,7 @@
 {
   "name": "Rainbow Sweatshirt",
   "price": 45,
-  "colors": ["gray", "red", "green"],
+  "colors": ["Gray", "Red", "Green"],
   "sizes": ["Small", "Medium", "Large"],
   "category": "Sweatshirt",
   "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -64,7 +64,7 @@
 {
   "name": "Feminist Tank",
   "price": 18,
-  "colors": ["gray", "red", "green"],
+  "colors": ["Gray", "Red", "Green"],
   "sizes": ["Small", "Medium", "Large"],
   "category": "Tank",
   "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -73,12 +73,10 @@
 {
   "name": "Rainbow Tshirt",
   "price": 24,
-  "colors": ["gray", "red", "green"],
+  "colors": ["Gray", "Red", "Green"],
   "sizes": ["Small", "Medium", "Large"],
   "category": "T-Shirt",
   "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   "images": ["flag.jpg", "flag.jpg", "flag.jpg"]
-}],
-"carts":[{
 }]
 }
