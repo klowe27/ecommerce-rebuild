@@ -23,13 +23,22 @@ export class CartService {
       } else {
         this.isLoggedIn = true;
         this.uid = user.uid;
-        this.cartItems = database.list('carts/'+this.uid);
       }
     });
   }
 
   getCart() {
-    this.cartItems;
+    let cartContents;
+    this.user = this.afAuth.authState;
+    this.user.subscribe(user => {
+      if (user == null) {
+      } else {
+        let uid = user.uid;
+        cartContents = this.database.list(`carts/${uid}`)
+      }
+    });
+    console.log(cartContents);
+    return cartContents;
   }
 
   addToCart(qty: number) {
