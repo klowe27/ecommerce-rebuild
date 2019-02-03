@@ -10,6 +10,8 @@ This is an e-commerce site where users can browse products and add them to their
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
 
+![Site Demo](src/assets/images/stonewallwearsdemo.gif)
+
 ## Site Plan
 - Header component (complete)
 - Footer component (complete)
