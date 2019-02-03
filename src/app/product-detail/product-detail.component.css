@@ -23,7 +23,6 @@
 .product-images {
   margin-right: 20px;
   margin-bottom: 10px;
-  background-color: gray;
   float: left;
   margin-left: 20px;
 }
@@ -88,4 +87,22 @@ button {
 .keep-shopping:hover {
   color: black;
   border: 1px solid black;
+}
+
+@media screen and (max-width: 768px) {
+  .product-details {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .product-images {
+    margin-left: 0px;
+    width: 100%;
+  }
+  .product-images img {
+    width: 100%;
+  }
+  .product-images-thumbnails {
+    margin-bottom: 30px;
+    margin-left: 0px;
+  }
 }
