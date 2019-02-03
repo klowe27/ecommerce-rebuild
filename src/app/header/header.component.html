@@ -7,9 +7,11 @@
     <a href='/resources'><div class="menu-item resources">Resources</div></a>
     <a href='/contact'><div class="menu-item contact">Contact</div></a>
     <a href='/action'><div class="menu-item action">Action</div></a>
-    <a href="/cart"><div class="cart">
+
+    <div class="cart" (click)="goToCart()">
       <img src="../assets/images/shopping-cart.png" class="cart-image" alt="Shopping cart"><p class="cart-items">{{cartSize}}</p>
-    </div></a>
+    </div>
+    
   </div>
 
   <div class="login">
