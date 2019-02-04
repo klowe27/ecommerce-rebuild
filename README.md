@@ -13,6 +13,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 <img src="src/assets/images/demo.gif">
 
 ## Site Plan
+
 - Header component (complete)
 - Footer component (complete)
 - Authentication (complete)
@@ -45,8 +46,14 @@ Models
 
 ## Future features
 * Allow guests to add to cart and checkout.
+* Add variety of product images.
 
-## Local development dependencies
+## Installation Instructions
+
+* View directly: https://stonewall-wears.firebaseapp.com/
+* Or, clone this repository and follow the steps below.
+
+### Local development dependencies
 
 To clone this project and run it locally, you must first create a Firebase account. Create an api-keys.ts document stored in src/app/api-keys, and add your account credentials like this:
 
@@ -64,11 +71,11 @@ Add /src/app/api-keys.ts to your .gitignore file. You can seed your database by 
 * Select the 3 vertical dots on the right-hand side of the grey bar with your database URL on it. (It's right next to the + and - buttons). This should bring up a small menu.
 * Select Import JSON from this menu. This will result in a modal window prompting you to upload a file.
 
-## Development server
+### Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Build
+### Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
